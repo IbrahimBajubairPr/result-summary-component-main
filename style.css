@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    ---light-red-color:hsl(0, 100%, 67%);
+    ---orangey-color: hsl(39, 100%, 56%);
+    ---green-color :  hsl(166, 100%, 37%);
+    ---Cobalt-color: hsl(234, 85%, 45%);
+    ---light-slate:hsl(252, 100%, 67%);
+    ---light-royal :  hsl(241, 81%, 54%);
+    ---Violet-color: hsla(256, 72%, 46%, 1);
+    ---Persian-color: hsla(241, 72%, 46%, 0);
+    ---pale-color:hsl(221, 100%, 96%);
+    ---Light-lavender-color: hsl(241, 100%, 89%);
+    ---dark-gray: hsl(224, 30%, 27%);
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+
+}
+body{
+    min-height: 100vh;
+    background-color: var(---pale-color);
+    display: grid;
+    place-content: center;
+    font-family: 'Hanken Grotesk';
+}
+p{
+    color: var(---Light-lavender-color);
+    font-size: 14px;
+}
+.product{
+    width: 530px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    background-color: #fff;
+    border-radius: 20px;
+    
+}
+.product-left{
+    text-align: center;
+    background: linear-gradient(var(---light-slate), var(---Cobalt-color) );
+    border-radius: 20px;
+    padding: 30px ;
+    color: var(---pale-color);
+}
+.product-left .result{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.num-of-result{
+    background:linear-gradient(var(---Cobalt-color), var(---Violet-color)) ;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    
+}
+.num-of-result p{
+    font-size: 12px;
+}
+.num-of-result p span{
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(---pale-color);
+}
+.product-left h2{
+    text-transform: capitalize;
+    margin-bottom:15px ;
+}
+.product-right{
+    padding: 30px;
+}
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding:10px;
+    border-radius: 10px;
+
+
+}
+ .one{
+    background-color: hsla(0, 100%, 67%, 0.132); 
+    ;
+} 
+.two{
+    background-color:hsla(39, 100%, 56%, 0.132); ;
+}
+.three{
+    background-color: hsla(166, 100%, 37%, 0.132);
+}
+.four{
+    background-color:hsla(234, 85%, 45%, 0.132) ;
+}
+.category p span{
+    color: var(---dark-gray);
+    font-weight: 700;
+}
+.reaction , 
+.Memory,
+.Verbal,
+.Visual{
+    display: flex;
+    gap: 0 7px;
+}
+
+.reaction p{
+color: var(---light-red-color) ;
+}
+.Memory p{
+    color: var(---orangey-color);
+}
+.Verbal p{
+    color: var(---green-color);
+}
+.Visual p {
+    color: var(---Cobalt-color);
+}
+button{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border:none;
+    background-color: var(---dark-gray);
+    color:#fff;
+    cursor: pointer;
+}
