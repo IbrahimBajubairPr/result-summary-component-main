@@ -26,6 +26,7 @@
 
 }
 body{
+    width: 100%;
     min-height: 100vh;
     background-color: var(---pale-color);
     display: grid;
@@ -37,12 +38,12 @@ p{
     font-size: 14px;
 }
 .product{
-    width: 530px;
+    max-width: 530px;
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
     background-color: #fff;
     border-radius: 20px;
-    
+    margin: 20px ;
 }
 .product-left{
     text-align: center;
@@ -138,4 +139,25 @@ button{
     background-color: var(---dark-gray);
     color:#fff;
     cursor: pointer;
+}
+footer{
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 14px;
+}
+@media (max-width : 475px){
+    body{
+        margin: 0;
+    }
+    .product{
+        grid-template-columns: 1fr;
+        width: 265px;
+        margin: auto;
+        border-radius: none;
+    }
+    .product-left{
+        border-radius: 0 0 20px 20px;
+    }
 }
